@@ -1,0 +1,139 @@
+.modal-container {
+  color: black;
+}
+
+.buttons{
+    margin-right: 8px;
+    display: flex;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 9vh;
+}
+
+.field-container {
+  border: 1px solid;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 5px 0;
+}
+
+.nested-field {
+  display: flex;
+  flex-direction: row;
+}
+
+.nested-field input {
+  width: 30px;
+}
+
+.nested-input {
+  margin-right: 10px;
+}
+
+.form-check {
+  margin-left: 20px;
+}
+
+.radio-container {
+  margin-top: 7px;
+}
+
+.radio-buttons-container {
+  display: flex;
+  place-items: center;
+  gap: 50px;
+  
+}
+
+.radio-button {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.radio-button__input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.radio-button__label {
+  display: inline-block;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  position: relative;
+  font-size: 16px;
+  color: #000000;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.radio-button__custom {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #555;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.radio-button__input:checked + .radio-button__label .radio-button__custom {
+  transform: translateY(-50%) scale(0.9);
+  border: 5px solid #4c8bf5;
+  color: #4c8bf5;
+}
+
+.radio-button__input:checked + .radio-button__label {
+  color: #4c8bf5;
+}
+
+.radio-button__label:hover .radio-button__custom {
+  transform: translateY(-50%) scale(1.2);
+  border-color: #4c8bf5;
+  box-shadow: 0 0 10px #4c8bf580;
+}
+
+.shadow__btn {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #31d2f2;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.shadow__btn:hover {
+  background-color: #0284fd;
+  box-shadow: 0px 15px 20px rgba(166, 97, 212, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.shadow__btn:active {
+  transform: translateY(-1px);
+}
+
+
+
